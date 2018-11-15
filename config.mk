@@ -4,7 +4,7 @@
 ################################################################################
 # Specify which archs you want to compile in. By default, we build all archs.
 
-CAPSTONE_ARCHS ?= arm aarch64 m68k mips powerpc sparc systemz x86 xcore tms320c64x m680x evm
+CAPSTONE_ARCHS ?= arm x86 evm
 
 
 ################################################################################
@@ -59,7 +59,7 @@ CAPSTONE_X86_REDUCE ?= no
 # Change 'CAPSTONE_X86_ATT_DISABLE = no' to 'CAPSTONE_X86_ATT_DISABLE = yes' to
 # disable AT&T syntax on x86 to reduce library size.
 
-CAPSTONE_X86_ATT_DISABLE ?= no
+CAPSTONE_X86_ATT_DISABLE ?= yes
 
 ################################################################################
 # Change 'CAPSTONE_STATIC = yes' to 'CAPSTONE_STATIC = no' to avoid building
